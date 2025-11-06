@@ -18,7 +18,7 @@ const MovieSection = ({ title, movies }) => {
   const addToWatchlist = (videoId) => {
     const username = localStorage.getItem("username"); // ✅ now using username
     fetch(
-      `http://localhost:6086/api/watchlist/add?username=${username}&videoId=${videoId}`,
+      `http://54.163.42.54:6086/api/watchlist/add?username=${username}&videoId=${videoId}`,
       { method: "POST" }
     )
       .then((res) => res.json())
