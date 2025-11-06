@@ -23,7 +23,7 @@ const AddAdmin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:6086/api/addAdmin", {
+      const response = await axios.post("http://54.163.42.54:6086/api/addAdmin", {
         username,   // ✅ added
         email,
         password,
