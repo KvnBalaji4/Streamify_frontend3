@@ -1,6 +1,6 @@
 // src/services/api.js
 
-const API_BASE_URL = 'http://localhost:6086/api/videos'; // Adjust the base URL as needed
+const API_BASE_URL = 'http://54.163.42.54:6086/api/videos'; // Adjust the base URL as needed
 
 // Function to fetch all videos
 export const fetchVideos = async () => {
