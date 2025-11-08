@@ -27,7 +27,7 @@ const UserManager = () => {
 
   const fetchUsers = async (email = "") => {
     try {
-      const res = await axios.get("http://54.163.42.54:6086/api/users/search", {
+      const res = await axios.get("http://98.91.0.193:6086/api/users/search", {
         params: { email },
       });
       setUsers(res.data);
@@ -42,7 +42,7 @@ const UserManager = () => {
 
     try {
       setDeletingUsername(username);
-      await axios.delete("http://54.163.42.54:6086/api/users/deleteByUsername", {
+      await axios.delete("http://98.91.0.193:6086/api/users/deleteByUsername", {
         params: { username },
       });
 
