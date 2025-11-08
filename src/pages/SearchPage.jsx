@@ -17,7 +17,7 @@ const SearchPage = () => {
 
     const fetchResults = async () => {
       try {
-        const res = await fetch(`http://54.163.42.54:6086/api/videos/search?query=${query}`);
+        const res = await fetch(`http://98.91.0.193:6086/api/videos/search?query=${query}`);
         const data = await res.json();
         setResults(data);
       } catch (err) {
