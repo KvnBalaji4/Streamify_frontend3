@@ -42,7 +42,7 @@ const UserManager = () => {
 
     try {
       setDeletingUsername(username);
-      await axios.delete("http://98.91.0.193:6086/api/users/deleteByUsername", {
+      await axios.delete("http://localhost:6086/api/users/deleteByUsername", {
         params: { username },
       });
 
