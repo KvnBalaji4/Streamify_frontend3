@@ -18,7 +18,7 @@ const SearchResults = ({ results }) => {
     try {
       const username = localStorage.getItem("username");
       const res = await fetch(
-        `http://98.91.0.193:6086/api/watchlist/add?username=${username}&videoId=${videoId}`,
+        `http://localhost:30080/api/watchlist/add?username=${username}&videoId=${videoId}`,
         { method: "POST" }
       );
       const data = await res.json();
