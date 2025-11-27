@@ -27,7 +27,7 @@ const UserManager = () => {
 
   const fetchUsers = async (email = "") => {
     try {
-      const res = await axios.get("http://98.91.0.193:6086/api/users/search", {
+      const res = await axios.get("http://localhost:6086/api/users/search", {
         params: { email },
       });
       setUsers(res.data);
