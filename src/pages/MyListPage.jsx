@@ -8,7 +8,7 @@ const MyListPage = () => {
 
   useEffect(() => {
     const username = localStorage.getItem("username"); // ✅ now using username
-    fetch(`http://98.91.0.193:6086/api/watchlist?username=${username}`)
+    fetch(`http://localhost:30080/api/watchlist?username=${username}`)
       .then((res) => res.json())
       .then((data) => setWatchlist(data))
       .catch((err) => console.error(err));
