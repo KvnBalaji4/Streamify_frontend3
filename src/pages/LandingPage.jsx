@@ -12,7 +12,7 @@ const LandingPage = () => {
   const [selectedGenre, setSelectedGenre] = useState("");
 
   useEffect(() => {
-    fetch("http://98.91.0.193:6086/api/videos")
+    fetch("http://localhost:30080/api/videos")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch videos");
         return res.json();
